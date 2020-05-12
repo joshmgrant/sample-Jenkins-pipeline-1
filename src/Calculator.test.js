@@ -5,7 +5,7 @@ const assert = require('assert');
 it('calculates Fahrenheit correctly', () => {
   const calc = new TemperatureCalculations;
 
-  const expectedF = 0
+  const expectedF = 32
   const actualF = calc.toFahrenheit(0);
 
   assert.equal(actualF, expectedF);
