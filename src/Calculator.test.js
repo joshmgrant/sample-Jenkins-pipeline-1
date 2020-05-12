@@ -2,7 +2,7 @@ import TemperatureCalculations from "./Calculations"
 
 const assert = require('assert');
 
-it('calculates Celsius correctly', () => {
+it('calculates Fahrenheit correctly', () => {
   const calc = new TemperatureCalculations;
 
   const expectedF = 32
