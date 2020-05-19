@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy Application') {
             steps {
-            	nodejs("11.9") { sh "npm start &" }
+            	nodejs("11.9") { sh "heroku open" }
             }
         }
         stage('Run Functional Tests') {
