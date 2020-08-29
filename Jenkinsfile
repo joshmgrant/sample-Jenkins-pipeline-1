@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                step {
+                step() {
                     nodejs('12.6') { sh 'npm install' }
                 }
             }
         }
         stage('Run Unit Tests') {
             steps {
-                step {
+                step() {
                     nodejs('12.6') {sh 'npm test'} 
                 }
             }
