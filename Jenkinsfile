@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                npm install
+                sh 'npm install'
             }
         }
         stage('Run Unit Tests') {
             steps {
-                npm test
+                sh 'npm test'
             }
         }
         stage('Deploy Application') {
