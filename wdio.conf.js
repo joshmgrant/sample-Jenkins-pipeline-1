@@ -58,7 +58,7 @@ exports.config = {
     sync: true,
     //
     // Level of logging verbosity: silent | verbose | command | data | result | error
-    logLevel: 'debug',
+    logLevel: 'info',
     //
     // Enables colors for log output.
     coloredLogs: true,
@@ -95,8 +95,6 @@ exports.config = {
     key: process.env.SAUCE_ACCESS_KEY,
 
     reporters: ['spec'],
-
-    sauceConnect: true,
     
     //
     // Options to be passed to Mocha.
